@@ -634,6 +634,3 @@ http.createServer(async (req, res) => {
     console.error(e); send(res, 500, { error: "Something went wrong on the server." });
   }
 }).listen(PORT, () => console.log(`CSS Platform running at http://localhost:${PORT}`));
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
-});
