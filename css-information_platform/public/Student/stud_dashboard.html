@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+<link rel="stylesheet" href="../css/dashboard.css">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0b320b">
+<link rel="icon" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="CSS Platform">
+<title>Student Dashboard – CSS PLATFORM</title>
+</head>
+<body data-role="student">
+<header class="top">
+  <button type="button" class="burger" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="side"><span></span><span></span><span></span></button>
+  <img class="logo" src="../logo.png" alt="Computer Science Society logo">
+  <h1>COMPUTER SCIENCE SOCIETY</h1>
+  <div class="user" id="who">Student</div>
+</header>
+<div class="layout">
+  <aside class="side" id="side">
+    <div class="drawer-head" id="drawerHead"></div>
+    <nav id="nav" aria-label="Main menu"></nav>
+    <a href="#" class="out" id="signout"><i class="fa-solid fa-right-from-bracket"></i> Sign-out</a>
+  </aside>
+  <main id="main" aria-live="polite">Loading…</main>
+</div>
+<footer class="foot"><span>&copy; 2026 Computer Science Society</span><span class="dot">&middot;</span><span>NVSU Bayombong Campus</span><span class="dot">&middot;</span><a href="mailto:nvsu_u_connect@nvsu.edu.ph">nvsu_u_connect@nvsu.edu.ph</a></footer>
+<div class="scrim" id="scrim" hidden></div>
+<div class="toast" id="toast" role="status"></div>
+<script src="../js/app.js"></script>
+</body>
+</html>

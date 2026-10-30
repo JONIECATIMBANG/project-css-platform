@@ -1,0 +1,26 @@
+[
+  {
+    "title": "1st Place - Guild Banner Competition",
+    "date": "2026-05-07",
+    "details": "CSS won 1st place in the Guild Banner Competition during CITE Week 2026: Rise of the Digital Champions, with the theme \"Coding the Future: Innovation, Collaboration, and Excellence\". Certificate of Recognition given at the University Gymnasium, Nueva Vizcaya State University.",
+    "photos": ["banner.jpg"]
+  },
+  {
+    "title": "1st Runner-Up - CITE Week 2026",
+    "date": "2026-04-29",
+    "details": "1st Runner-Up trophy from CITE Week 2026: Rise of the Digital Champions, College of Information Technology Education, Nueva Vizcaya State University.",
+    "photos": ["runner-up.jpg", "trophies.jpg"]
+  },
+  {
+    "title": "FOMO Award",
+    "date": "2026-04-29",
+    "details": "Given to Nexus Guild (Computer Science Department) for always wanting to take part in every activity during CITE Week 2026: Rise of the Digital Champions. Given at the ITE Building Hallway, Nueva Vizcaya State University.",
+    "photos": ["fomo.jpg"]
+  },
+  {
+    "title": "BFF Award",
+    "date": "2026-04-29",
+    "details": "Given to Nexus Guild (Computer Science Department) for always being supportive and a team player, even beyond the title, during CITE Week 2026: Rise of the Digital Champions. Given at the ITE Building Hallway, Nueva Vizcaya State University.",
+    "photos": ["bff.jpg"]
+  }
+]

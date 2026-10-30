@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0b320b">
+<link rel="icon" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="CSS Platform">
+<title>Log in – CSS PLATFORM</title>
+</head>
+<body class="split">
+<div class="split-wrap">
+<aside class="welcome">
+<div class="welcome-in">
+  <p class="eyebrow">WELCOME TO</p>
+  <h2>COMPUTER SCIENCE SOCIETY</h2>
+  <span class="bar" aria-hidden="true"></span>
+  <p class="blurb">Log in to see events, announcements, achievements and your officers, all in one place.</p>
+</div>
+</aside>
+<main class="card wide">
+  <div class="hero">
+    <img class="logo" src="logo.png" alt="Computer Science Society logo">
+    <h1 id="roleTitle">LOG IN</h1>
+  </div>
+
+  <section id="policyPage">
+    <p class="sub">DATA PRIVACY NOTICE</p>
+    <div class="policy">
+      <p>The Computer Science Society collects your name, U-connect username, email, program and year level only to manage membership and organization activities.</p>
+      <p>Your details are visible only to authorized officers and the administrator. They are not sold or shared outside the organization.</p>
+      <p>You may ask the administrator to correct or delete your record at any time.</p>
+    </div>
+    <label class="chk"><input type="checkbox" id="agreePolicy"> I have read and agree to the data privacy notice.</label>
+    <button class="btn main" id="continueBtn" disabled>CONTINUE</button>
+    <a class="btn" href="index.html">BACK</a>
+  </section>
+
+  <section id="loginPage" hidden>
+    <p class="sub">LOG IN WITH YOUR ACCOUNT</p>
+    <form id="loginForm" novalidate>
+      <label>U-connect username<input name="uconnect" autocomplete="username" placeholder="Enter your U-connect username" required></label>
+      <div class="field">
+        <div class="lblrow"><label for="pw">Password</label><a href="forgot-password.html" class="forgot-link" id="forgotLink">Forgot password?</a></div>
+        <span class="pw-wrap">
+          <input id="pw" name="password" type="password" autocomplete="current-password" placeholder="••••••••" required>
+          <button type="button" class="pw-toggle" aria-label="Show password">
+            <svg class="eye" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+            <svg class="eye-off" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17.94 17.94A10.94 10.94 0 0 1 12 19c-7 0-11-7-11-7a19.8 19.8 0 0 1 5.06-5.94"/>
+              <path d="M9.9 4.24A10.9 10.9 0 0 1 12 5c7 0 11 7 11 7a19.7 19.7 0 0 1-3.17 4.19"/>
+              <path d="M1 1l22 22"/>
+            </svg>
+          </button>
+        </span>
+      </div>
+      <label class="chk"><input type="checkbox" id="remember"> <span>Remember me<small class="hint">Stay logged in on this device for 7 days. Do not use this on a shared computer.</small></span></label>
+      <p class="err" id="err" role="alert"></p>
+      <button class="btn main" id="loginBtn">LOG-IN</button>
+    </form>
+    <a class="btn" href="index.html">BACK</a>
+    <p class="small">No account yet? <a class="link" href="register.html">Register here</a></p>
+  </section>
+</main>
+</div>
+<script src="js/login.js"></script>
+<script src="/js/pwa.js"></script>
+</body>
+</html>

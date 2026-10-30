@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0b320b">
+<link rel="icon" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="CSS Platform">
+<title>Register – CSS PLATFORM</title>
+</head>
+<body class="tall split">
+<div class="split-wrap">
+<aside class="welcome">
+<div class="welcome-in">
+  <p class="eyebrow">WELCOME TO</p>
+  <h2>COMPUTER SCIENCE SOCIETY</h2>
+  <span class="bar" aria-hidden="true"></span>
+  <p class="blurb">Create your account to join the society. The administrator will check your registration before you can log in.</p>
+</div>
+</aside>
+<main class="card wide">
+  <div class="hero">
+    <img class="logo" src="logo.png" alt="Computer Science Society logo">
+    <h1>REGISTER</h1>
+  </div>
+  <div id="formWrap">
+    <p class="sub">The administrator checks every registration before you can log in. Choose Student or Officer. After the administrator accepts your registration, you go straight to the dashboard of the role you chose.</p>
+    <form id="regForm" novalidate>
+      <label>Role<select name="role" required><option value="student">Student</option><option value="officer">Officer</option></select></label>
+      <label>Full name<input name="name" autocomplete="name" required maxlength="80" placeholder="e.g. Istaner Dela Krus"></label>
+      <label>U-connect username<input name="uconnect" autocomplete="username" required maxlength="40" placeholder="e.g. jun_june"></label>
+      <label>Email<input name="email" type="email" autocomplete="email" required maxlength="120" placeholder="e.g. rene@gmail.com"></label>
+      <label>Program<select name="program" required><option value="">Select your program</option><option value="Rob">BSCS - Robotics</option><option value="GD">BSCS - Game Development</option></select></label>
+      <label>Year level & Section
+        <select name="year">
+          <option>1-A</option><option>1-B</option>
+          <option>2-A</option><option>2-B</option>
+          <option>3-A</option><option>3-B</option>
+          <option>4-A</option><option>4-B</option>
+        </select>
+      </label>
+
+      <label>Password
+        <span class="pw-wrap">
+          <input name="password" type="password" autocomplete="new-password" placeholder="• • • • • • • •" required>
+          <button type="button" class="pw-toggle" aria-label="Show password">
+            <svg class="eye" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+            <svg class="eye-off" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17.94 17.94A10.94 10.94 0 0 1 12 19c-7 0-11-7-11-7a19.8 19.8 0 0 1 5.06-5.94"/>
+              <path d="M9.9 4.24A10.9 10.9 0 0 1 12 5c7 0 11 7 11 7a19.7 19.7 0 0 1-3.17 4.19"/>
+              <path d="M1 1l22 22"/>
+            </svg>
+          </button>
+        </span>
+      </label>
+
+      <label>Confirm password<input name="confirm" type="password" autocomplete="new-password" required></label>
+
+      <label class="chk">
+        <input type="checkbox" id="terms" name="terms">
+        <span>I agree to the <a href="#" id="openTerms" class="link">Terms and Conditions</a>.</span>
+      </label>
+
+      <p class="err" id="err" role="alert"></p>
+      <button class="btn main">Create my account</button>
+    </form>
+    <a class="btn" href="index.html">BACK</a>
+  </div>
+
+  <div id="done" hidden>
+    <p class="ok">Registration sent.</p>
+    <p class="sub">Check your email and verify your address first. Then wait for the administrator to approve your account before logging in.</p>
+    <a class="btn main" href="index.html">BACK TO HOME</a>
+  </div>
+</main>
+</div>
+
+<div class="modal" id="termsModal" hidden>
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="termsTitle">
+    <h2 id="termsTitle">TERMS AND CONDITIONS</h2>
+    <div class="modal-body">
+      <p>1. You must provide accurate information when registering (name, U-connect username, email, program and year level).</p>
+      <p>2. Your account is subject to verification and approval by the administrator before it becomes active.</p>
+      <p>3. Keep your password confidential. You are responsible for all activity under your account.</p>
+      <p>4. Use the platform only for Computer Science Society activities. Posting false, offensive or harmful content is not allowed.</p>
+      <p>5. The administrator may suspend or delete accounts that violate these terms or provide invalid information.</p>
+      <p>6. Your data is handled according to the Data Privacy Notice and is visible only to authorized officers and the administrator.</p>
+      <p>7. These terms may be updated. Continued use of the platform means you accept the changes.</p>
+    </div>
+    <button type="button" class="btn main" id="closeTerms">I UNDERSTAND</button>
+  </div>
+</div>
+
+<script src="js/register.js"></script>
+<script src="/js/pwa.js"></script>
+</body>
+</html>
