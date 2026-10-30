@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css"><title>Verify email – CSS PLATFORM</title>
+</head>
+<body><main class="card wide"><div class="hero"><img class="logo" src="logo.png" alt="CSS logo"><h1>VERIFY EMAIL</h1></div><p class="sub" id="message">Verifying your email address...</p><a class="btn main" href="index.html">BACK TO HOME</a></main>
+<script>(()=>{const token=new URLSearchParams(location.search).get('token');fetch('/api/verify-email',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({token})}).then(async r=>{const j=await r.json().catch(()=>({}));document.getElementById('message').textContent=r.ok?'Your email has been verified. Wait for the administrator to approve your account before logging in.':(j.error||'Could not verify your email.');}).catch(()=>{document.getElementById('message').textContent='Could not verify your email.';});})();</script><script src="/js/pwa.js"></script></body>
+</html>

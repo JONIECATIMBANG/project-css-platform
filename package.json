@@ -1,0 +1,16 @@
+{
+  "name": "css-information-platform",
+  "version": "1.0.0",
+  "description": "Computer Science Society information platform (student, officer, admin)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "demo": "node server.js --demo"
+  },
+  "dependencies": {
+    "nodemailer": "^7.0.10"
+  },
+  "engines": { "node": ">=22.13" },
+  "license": "UNLICENSED",
+  "private": true
+}
