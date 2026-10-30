@@ -633,4 +633,4 @@ http.createServer(async (req, res) => {
     if (e instanceof HttpError) return send(res, e.code, { error: e.message, ...(e.tag ? { code: e.tag } : {}) });
     console.error(e); send(res, 500, { error: "Something went wrong on the server." });
   }
-}).listen(PORT, () => console.log(`CSS Platform running at http://localhost:${PORT}`));
+}).listen(PORT, "0.0.0.0", () => console.log(`CSS Platform running on port ${PORT}`));
