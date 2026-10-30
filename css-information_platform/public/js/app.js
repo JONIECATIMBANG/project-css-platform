@@ -3,7 +3,7 @@
 (() => {
   "use strict";
   const ROLE = document.body.dataset.role;
-  const HOMES = { student: "/Student/stud_dashboard.html", officer: "/Officer/Officer_Dashboard.html", admin: "/Admin/Admin_Dashboard.html" };
+  const HOMES = { student: "/Student/stud_dashboard.html", officer: "/Officer/Officer_Dashboard.html", admin: "/Officer/Admin/Admin_Dashboard.html" };
   const store = localStorage.getItem("css.token") ? localStorage : sessionStorage; // where this login was saved ("Remember me" uses localStorage)
   let token = store.getItem("css.token");
   if (!token) { location.replace("/index.html"); return; }

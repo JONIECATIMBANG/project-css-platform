@@ -2,7 +2,7 @@
   const HOMES = {
     student: "Student/stud_dashboard.html",
     officer: "Officer/Officer_Dashboard.html",
-    admin: "Admin/Admin_Dashboard.html" };
+    admin: "Officer/Admin/Admin_Dashboard.html" };
   const role = new URLSearchParams(location.search).get("role");
   if (!HOMES[role]) { location.replace("index.html"); return; }
   document.getElementById("forgotLink").href = "forgot-password.html?role=" + role;
